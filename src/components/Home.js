@@ -81,7 +81,7 @@ const Home = () => {
             <div className="avatar parallax" style={{ position: "absolute" }}>
               <div className="main">
                 <img
-                  src="../../public/img/thibault/4R2A2973.png"
+                  src="/img/thibault/4R2A2973.png"
                   alt="image"
                   className="layer"
                   data-depth="0.1"
