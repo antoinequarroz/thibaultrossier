@@ -7,8 +7,8 @@ const About = () => {
         <div className="about_inner">
           <div className="left">
             <div className="image">
-              <img src="/img/thumbs/45-49.jpg" alt="aali image" />
-              <div className="main" data-img-url="img/about/1.jpg" />
+              <img src="/img/thibault/thibaultimage1.png" alt="tr image" />
+              <div className="main" data-img-url="thib" />
               <span
                 className="square moving_effect"
                 data-direction="y"

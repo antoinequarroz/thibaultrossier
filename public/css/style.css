@@ -827,6 +827,19 @@ h6 { font-size: 16px; }
 	border-radius: 10px;
 	z-index: 1;
 }
+.aali_tm_about .left .image .main .test{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-image: url("/public/img/thibault/thibaultimage1.png");
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	z-index: 1;
+}
 .aali_tm_about .square{
 	position: absolute;
 	width: 270px;

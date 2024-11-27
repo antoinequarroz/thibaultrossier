@@ -7,7 +7,7 @@ const Resume = () => {
     jarallaxContent();
   }, []);
   return (
-    <div className="aali_tm_section">
+    <div className="aali_tm_section" id="resulats">
       <div className="aali_tm_resume">
         <div className="content">
           <div className="container">

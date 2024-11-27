@@ -11,6 +11,7 @@ import Skills from "../src/components/Skills";
 import Testimonial from "../src/components/Testimonial";
 import Layout from "../src/layouts/Layout";
 import {useEffect} from "react";
+import Calendrier from "../src/components/Calendrier";
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
   ssr: false,
 });
@@ -26,7 +27,9 @@ const Index = () => {
       <Counter />
       <Resume />
       <Testimonial />
+      <Calendrier />
       <Contact />
+        {/* <Portfolio />
       <Skills />
       <Portfolio />
       <Service />
@@ -34,6 +37,7 @@ const Index = () => {
       <Testimonial />
       <Blog />
       <Contact />
+      */}
     </Layout>
   );
 };
