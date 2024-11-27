@@ -1,0 +1,75 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+.out/
+.next/
+
+# Logs
+logs/
+*.log
+*.gz
+*.out
+*.pid
+*.seed
+*.pid.lock
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Static hosting
+*.cache/
+.cache-loader/
+public/
+
+# Testing
+coverage/
+*.lcov
+*.clover
+
+# Miscellaneous
+*.gz
+*.zip
+*.7z
+*.tar
+*.rar
+
+# Images or uploads
+uploads/
+*.psd
+*.xcf
+
+# React or Next.js specific
+.eslintcache
+.stylelintcache
+.cache/
+.cypress/
+.next/
+
