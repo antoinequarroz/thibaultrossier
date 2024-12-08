@@ -34,6 +34,7 @@ const Testimonial = () => {
                   <p>
                     Thibault est un excellent grimpeur. Il l’a déjà prouvé en devenant champion Suisse de la montagne en 2019. La saison dernière, c’est dans la plaine qu’il a énormément progressé et cela fait de lui un coureur complet. Explosif, il a la capacité de s’imposer sur différents terrains. Travailleur, passionné, l’avenir lui appartient.
                   </p>
+
                 </div>
                 <div className="name">
                   <h3>
@@ -46,6 +47,19 @@ const Testimonial = () => {
                 /*
               }
               <SwiperSlide className="item">
+                <div className="text">
+                  <p>
+                    Good overall template. I am getting back into coding and had
+                    a simple question for the author. They responded within 5
+                    minutes and answered my question. Highly recommend!
+                  </p>
+                </div>
+                <div className="name">
+                  <h3>
+                    Jessica Parker, <span>App Developer</span>
+                  </h3>
+                </div>
+              </SwiperSlide><SwiperSlide className="item">
                 <div className="text">
                   <p>
                     Good overall template. I am getting back into coding and had

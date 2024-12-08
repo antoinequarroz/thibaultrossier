@@ -17,7 +17,6 @@ const Home = () => {
         <div className="container">
           <div className="hero_inner">
             <div className="content">
-              <span className="hello">Hello, {`je suis`}</span>
               <h3 className="name">Thibault Rossier</h3>
               <div className="job">
                 <span className="cd-headline rotate-1">
