@@ -8,11 +8,8 @@ import Testimonial from "../src/components/Testimonial";
 import Layout from "../src/layouts/Layout";
 import {useEffect} from "react";
 import Calendrier from "../src/components/Calendrier";
-import PlatineSponsors from "../src/components/PlatineSponsors";
-import OrSponsors from "../src/components/OrSponsors";
-import ArgentSponsors from "../src/components/ArgentSponsors";
-import BronzeSponsors from "../src/components/BronzeSponsors";
 import Sponsors from "../src/components/Sponsors";
+import Shop from "../src/components/Shop";
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
     ssr: false,
 });
@@ -30,6 +27,7 @@ const Index = () => {
             <Testimonial />
             <Calendrier />
             <Sponsors />
+            <Shop />
             <Contact />
         </Layout>
     );

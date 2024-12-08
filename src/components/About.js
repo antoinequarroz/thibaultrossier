@@ -7,7 +7,7 @@ const About = () => {
         <div className="about_inner">
           <div className="left">
             <div className="image">
-              <img src="/img/thibault/thibaultimage1.png" alt="tr image" />
+              <img src="/img/thibault/img.png" alt="tr image" />
               <div className="main" data-img-url="thib" />
               <span
                 className="square moving_effect"
@@ -61,13 +61,7 @@ const About = () => {
           </div>
           <div className="right">
             <div className="image">
-              <img src="img/thumbs/41-61.jpg" alt="aali image" />
-              <div className="main" data-img-url="img/about/2.jpg" />
-              <div
-                className="square moving_effect"
-                data-direction="x"
-                data-reverse="no"
-              />
+              <div className="main" data-img-url="/img/thibault/img.png" />
             </div>
           </div>
         </div>

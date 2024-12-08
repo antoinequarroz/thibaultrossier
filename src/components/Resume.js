@@ -61,40 +61,10 @@ const Resume = () => {
                           <div className="info">
                             <div className="left">
                               <h3>Courses nationales</h3>
-                              <span>GP Puyloubier</span>
-                            </div>
-                            <div className="right">
-                              <span>34ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses nationales</h3>
                               <span>Berra Immobilier</span>
                             </div>
                             <div className="right">
                               <span>9ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses nationales</h3>
-                              <span>GP Ticino</span>
-                            </div>
-                            <div className="right">
-                              <span>22ème</span>
                             </div>
                           </div>
                         </div>
@@ -158,8 +128,8 @@ const Resume = () => {
                           <span className="icon"></span>
                           <div className="info">
                             <div className="left">
-                              <h3>Courses régionales</h3>
-                              <span>Giron du Rhône Blonay</span>
+                              <h3>Courses nationale</h3>
+                              <span>Championnat suisse de la montagne junior 2018</span>
                             </div>
                             <div className="right">
                               <span>2ème</span>
@@ -167,6 +137,66 @@ const Resume = () => {
                           </div>
                         </div>
                       </li>
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Courses nationale</h3>
+                              <span>Championnat suisse de la montagne junior 2019</span>
+                            </div>
+                            <div className="right">
+                              <span>1er</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Courses nationale</h3>
+                              <span>Championnat suisse de la montagne Elite</span>
+                            </div>
+                            <div className="right">
+                              <span>3ème</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Courses nationale</h3>
+                              <span>Championnat suisse en ligne Elite</span>
+                            </div>
+                            <div className="right">
+                              <span>11ème</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Courses internationale</h3>
+                              <span>Championnat d'Europe des grimpeurs 2023 U23</span>
+                            </div>
+                            <div className="right">
+                              <span>3ème</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
                     </ul>
                   </li>
                 </ul>

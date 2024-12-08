@@ -11,12 +11,13 @@ const Testimonial = () => {
       nextEl: ".next_button",
     },
   };
+
   return (
     <div className="aali_tm_section" id="testimonial">
       <div className="aali_tm_testimonials">
         <div className="left">
           <div className="image">
-            <img src="/img/thibault/4R2A2926.png" alt="tr image" />
+            <img src="/img/thibault/img.png" className="imagetr" alt="tr image" />
           </div>
         </div>
         <div className="right">
@@ -119,6 +120,7 @@ const Testimonial = () => {
       </div>
     </div>
   );
+
 };
 
 export default Testimonial;

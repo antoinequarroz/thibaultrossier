@@ -157,7 +157,7 @@ const Calendrier = () => {
                                     </li>
                                     <li className="wow fadeInRight" data-wow-duration="1s">
                                         <h3 className="main_title">
-                                            <span>Palmarès</span>
+                                            <span>2025</span>
                                         </h3>
                                         <ul className="list">
                                             <li>
@@ -165,11 +165,12 @@ const Calendrier = () => {
                                                     <span className="icon"></span>
                                                     <div className="info">
                                                         <div className="left">
-                                                            <h3>Courses régionales</h3>
-                                                            <span>Giron du Rhône Blonay</span>
+                                                            <h3>A venir ...</h3>
+                                                            <span>
+                                                            </span>
                                                         </div>
                                                         <div className="right">
-                                                            <span>2ème</span>
+                                                            <span></span>
                                                         </div>
                                                     </div>
                                                 </div>
