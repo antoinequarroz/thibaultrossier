@@ -20,7 +20,7 @@ const PlatineSponsors = () => {
     ];
 
     return (
-        <div className="sponsors_category platine">
+        <div className="sponsors_category platine" id="sponsors">
             <div className="main_title">
                 <h3>Vélo de Platine</h3>
             </div>
