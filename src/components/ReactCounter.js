@@ -1,5 +1,5 @@
-import CountUp from "react-countup";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import CountUp from 'react-countup';
+import ReactVisibilitySensor from 'react-visibility-sensor';
 const ReactCounter = ({ end, decimals }) => {
   return (
     <CountUp

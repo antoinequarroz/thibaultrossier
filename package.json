@@ -8,11 +8,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "emailjs-com": "^3.2.0",
     "isotope-layout": "^3.0.6",
     "jarallax": "^1.12.8",
     "next": "12.0.3",
-    "nodemailer": "^6.9.16",
     "parallax-js": "^3.1.0",
     "react": "17.0.2",
     "react-countup": "^6.1.0",
@@ -25,6 +23,9 @@
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "12.0.3"
+    "eslint-config-next": "12.0.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
   }
 }

@@ -26,23 +26,23 @@ const Footer = () => {
             <div className="bottom">
               <div className="left">
                 <p>
-                  Créer par {"Antoine Quarroz"}
-                  <a>
-                  </a>{" "}
-                  © {new Date().getFullYear()}
+                  Créer par {'Antoine Quarroz'}
+                  <a></a> © {new Date().getFullYear()}
                 </p>
               </div>
               <div className="right">
                 <ul>
                   <li>
-                    <a className="line_anim" href="https://thibaultrossier.ch/wp-content/uploads/2024/06/PV-2eme-AG-06.05.2023.pdf">
+                    <a
+                      className="line_anim"
+                      href="https://thibaultrossier.ch/wp-content/uploads/2024/06/PV-2eme-AG-06.05.2023.pdf"
+                    >
                       Status du club
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
         <span className="square moving_effect" data-direction="x" />

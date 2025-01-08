@@ -8,7 +8,7 @@ const fb = (
       width="96.124px"
       height="96.123px"
       viewBox="0 0 96.124 96.123"
-      style={{ enableBackground: "new 0 0 96.124 96.123" }}
+      style={{ enableBackground: 'new 0 0 96.124 96.123' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -40,7 +40,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 512 512"
-      style={{ enableBackground: "new 0 0 512 512" }}
+      style={{ enableBackground: 'new 0 0 512 512' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -74,7 +74,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 512 512"
-      style={{ enableBackground: "new 0 0 512 512" }}
+      style={{ enableBackground: 'new 0 0 512 512' }}
       xmlSpace="preserve"
       width={512}
       height={512}
@@ -93,7 +93,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 455.861 455.861"
-      style={{ enableBackground: "new 0 0 455.861 455.861" }}
+      style={{ enableBackground: 'new 0 0 455.861 455.861' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -130,7 +130,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 330 330"
-      style={{ enableBackground: "new 0 0 330 330" }}
+      style={{ enableBackground: 'new 0 0 330 330' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -171,7 +171,7 @@ const fb = (
       width="791.803px"
       height="791.803px"
       viewBox="0 0 791.803 791.803"
-      style={{ enableBackground: "new 0 0 791.803 791.803" }}
+      style={{ enableBackground: 'new 0 0 791.803 791.803' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -218,7 +218,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 512.001 512.001"
-      style={{ enableBackground: "new 0 0 512.001 512.001" }}
+      style={{ enableBackground: 'new 0 0 512.001 512.001' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -252,7 +252,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 201.629 201.629"
-      style={{ enableBackground: "new 0 0 201.629 201.629" }}
+      style={{ enableBackground: 'new 0 0 201.629 201.629' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -282,7 +282,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 455.861 455.861"
-      style={{ enableBackground: "new 0 0 455.861 455.861" }}
+      style={{ enableBackground: 'new 0 0 455.861 455.861' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >
@@ -319,7 +319,7 @@ const fb = (
       x="0px"
       y="0px"
       viewBox="0 0 511.995 511.995"
-      style={{ enableBackground: "new 0 0 511.995 511.995" }}
+      style={{ enableBackground: 'new 0 0 511.995 511.995' }}
       xmlSpace="preserve"
       className="svg replaced-svg"
     >

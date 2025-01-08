@@ -1,4 +1,4 @@
-import ReactCounter from "./ReactCounter";
+import ReactCounter from './ReactCounter';
 
 const Counter = () => {
   return (

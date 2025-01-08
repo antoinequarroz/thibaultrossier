@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { preloader } from "../utilits";
+import { useEffect } from 'react';
+import { preloader } from '../utilits';
 
 const Preloader = () => {
   useEffect(() => {

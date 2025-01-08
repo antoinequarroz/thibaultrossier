@@ -17,7 +17,7 @@ const ModalBox = ({ children, close }) => {
               x="0px"
               y="0px"
               viewBox="0 0 511.995 511.995"
-              style={{ enableBackground: "new 0 0 511.995 511.995" }}
+              style={{ enableBackground: 'new 0 0 511.995 511.995' }}
               xmlSpace="preserve"
               className=" replaced-svg modalCloseSvg"
             >

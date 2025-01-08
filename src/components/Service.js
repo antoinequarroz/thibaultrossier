@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import {
   camera,
   cameraDark,
@@ -9,17 +9,17 @@ import {
   userDark,
   web,
   webDark,
-} from "../svgImage";
-import ModalBox from "./ModalBox";
+} from '../svgImage';
+import ModalBox from './ModalBox';
 
 const Service = ({ dark }) => {
   const [modal, setModal] = useState(0);
-  const hidden = (value) => (value === modal ? "" : "service_hidden_details");
+  const hidden = (value) => (value === modal ? '' : 'service_hidden_details');
   useEffect(() => {
-    let VanillaTilt = require("vanilla-tilt");
-    VanillaTilt.init(document.querySelectorAll(".tilt-effect"), {
+    let VanillaTilt = require('vanilla-tilt');
+    VanillaTilt.init(document.querySelectorAll('.tilt-effect'), {
       maxTilt: 6,
-      easing: "cubic-bezier(.03,.98,.52,.99)",
+      easing: 'cubic-bezier(.03,.98,.52,.99)',
       speed: 500,
       transition: true,
     });
@@ -57,7 +57,7 @@ const Service = ({ dark }) => {
                     {dark ? cameraDark : camera}
                     <img
                       className="back"
-                      src={`img/svg/service${dark ? "-dark" : ""}.png`}
+                      src={`img/svg/service${dark ? '-dark' : ''}.png`}
                       alt="Service"
                     />
                   </span>
@@ -70,7 +70,7 @@ const Service = ({ dark }) => {
                   <div className="text">
                     <p>
                       Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
+                      design team that creates innovative, effective websites{' '}
                     </p>
                   </div>
                   <a
@@ -110,7 +110,7 @@ const Service = ({ dark }) => {
                         </p>
                         <p>
                           In today’s digital world, your website is the first
-                          interaction consumers have with your business.{" "}
+                          interaction consumers have with your business.{' '}
                           {`That's`}
                           why almost 95 percent of a user’s first impression
                           relates to web design. It’s also why web design
@@ -137,7 +137,7 @@ const Service = ({ dark }) => {
                     {dark ? webDark : web}
                     <img
                       className="back"
-                      src={`img/svg/service${dark ? "-dark" : ""}.png`}
+                      src={`img/svg/service${dark ? '-dark' : ''}.png`}
                       alt="service"
                     />
                   </span>
@@ -150,7 +150,7 @@ const Service = ({ dark }) => {
                   <div className="text">
                     <p>
                       Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
+                      design team that creates innovative, effective websites{' '}
                     </p>
                   </div>
                   <a
@@ -220,7 +220,7 @@ const Service = ({ dark }) => {
                     {dark ? penDark : pen}
                     <img
                       className="back"
-                      src={`img/svg/service${dark ? "-dark" : ""}.png`}
+                      src={`img/svg/service${dark ? '-dark' : ''}.png`}
                       alt="service"
                     />
                   </span>
@@ -233,7 +233,7 @@ const Service = ({ dark }) => {
                   <div className="text">
                     <p>
                       Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
+                      design team that creates innovative, effective websites{' '}
                     </p>
                   </div>
                   <a
@@ -299,7 +299,7 @@ const Service = ({ dark }) => {
                     {dark ? userDark : user}
                     <img
                       className="back"
-                      src={`img/svg/service${dark ? "-dark" : ""}.png`}
+                      src={`img/svg/service${dark ? '-dark' : ''}.png`}
                       alt="service"
                     />
                   </span>
@@ -312,7 +312,7 @@ const Service = ({ dark }) => {
                   <div className="text">
                     <p>
                       Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
+                      design team that creates innovative, effective websites{' '}
                     </p>
                   </div>
                   <a

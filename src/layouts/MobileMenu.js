@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const MobileMenu = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,7 +14,7 @@ const MobileMenu = () => {
           <div className="trigger">
             <div
               className={`hamburger hamburger--slider ${
-                toggle ? "is-active" : ""
+                toggle ? 'is-active' : ''
               }`}
             >
               <div className="hamburger-box" onClick={() => setToggle(!toggle)}>
@@ -26,7 +26,7 @@ const MobileMenu = () => {
       </div>
       <div
         className="dropdown"
-        style={{ display: `${toggle ? "block" : "none"}` }}
+        style={{ display: `${toggle ? 'block' : 'none'}` }}
       >
         <div className="dropdown_inner">
           <ul className="anchor_nav">

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { fb, insta, msg, twitter } from "../svgImage";
-import { parallax } from "../utilits";
+import { useEffect, useState } from 'react';
+import { fb, insta, msg, twitter } from '../svgImage';
+import { parallax } from '../utilits';
 
 const Home = () => {
   const [text, setText] = useState(1);
@@ -20,17 +20,17 @@ const Home = () => {
               <h3 className="name">Thibault Rossier</h3>
               <div className="job">
                 <span className="cd-headline rotate-1">
-                  {" "}
+                  {' '}
                   {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
                   {/* <span className="blc">Je suis </span> */}
                   <span className="cd-words-wrapper">
-                    <b className={text === 1 ? "is-visible" : "is-hidden"}>
+                    <b className={text === 1 ? 'is-visible' : 'is-hidden'}>
                       Cycliste
                     </b>
-                    <b className={text === 2 ? "is-visible" : "is-hidden"}>
+                    <b className={text === 2 ? 'is-visible' : 'is-hidden'}>
                       Grimpeur
                     </b>
-                    <b className={text === 3 ? "is-visible" : "is-hidden"}>
+                    <b className={text === 3 ? 'is-visible' : 'is-hidden'}>
                       Combatif
                     </b>
                   </span>
@@ -47,19 +47,19 @@ const Home = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                       style={{
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round",
-                        strokeMiterlimit: "1.5",
+                        fillRule: 'evenodd',
+                        clipRule: 'evenodd',
+                        strokeLinecap: 'round',
+                        strokeLinejoin: 'round',
+                        strokeMiterlimit: '1.5',
                       }}
                     >
                       <path
                         id="wheel"
                         d="M123.359,79.775l0,72.843"
                         style={{
-                          fill: "none",
-                          stroke: "#fff",
+                          fill: 'none',
+                          stroke: '#fff',
                           strokeWidth: 20,
                         }}
                       />
@@ -67,8 +67,8 @@ const Home = () => {
                         id="mouse"
                         d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
                         style={{
-                          fill: "none",
-                          stroke: "#fff",
+                          fill: 'none',
+                          stroke: '#fff',
                           strokeWidth: 20,
                         }}
                       />
@@ -77,7 +77,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="avatar parallax" style={{ position: "absolute" }}>
+            <div className="avatar parallax" style={{ position: 'absolute' }}>
               <div className="main">
                 <img
                   src="/img/thibault/4R2A2973.png"
@@ -102,7 +102,7 @@ const Home = () => {
                 <span className="in layer" data-depth="0.3" />
               </span>
               <h3 className="stroke_text">
-                <span>Fan's Club</span>
+                <span>Fans Club</span>
               </h3>
             </div>
           </div>
@@ -110,10 +110,14 @@ const Home = () => {
         <div className="socials">
           <ul>
             <li>
-              <a href="https://www.facebook.com/profile.php?id=100066420318465">{fb}</a>
+              <a href="https://www.facebook.com/profile.php?id=100066420318465">
+                {fb}
+              </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/thibault.rossierofficial/">{insta}</a>
+              <a href="https://www.instagram.com/thibault.rossierofficial/">
+                {insta}
+              </a>
             </li>
           </ul>
         </div>

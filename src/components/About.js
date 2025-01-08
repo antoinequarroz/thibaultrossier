@@ -1,4 +1,5 @@
-import { download } from "../svgImage";
+import { download } from '../svgImage';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -7,7 +8,13 @@ const About = () => {
         <div className="about_inner">
           <div className="left">
             <div className="image">
-              <img src="/img/thibault/img.png" alt="tr image" />
+              <Image
+                src="/img/thibault/img.png"
+                alt="Tr image"
+                width={500} // Remplacez par la largeur réelle de votre image
+                height={500} // Remplacez par la hauteur réelle de votre image
+                className="responsive-image" // Optionnel : ajouter une classe pour le style
+              />
               <div className="main" data-img-url="thib" />
               <span
                 className="square moving_effect"
@@ -25,9 +32,9 @@ const About = () => {
           </div>
           <div className="center">
             <div className="title wow fadeInUp" data-wow-duration="1s">
-              <h1> A propos de moi</h1>
+              <h1>A propos de moi</h1>
               <h3>
-                {"Je m'appelle "} <span>Thibault Rossier</span>
+                {'Je m&apos;appelle '} <span>Thibault Rossier</span>
               </h3>
               <h3>
                 23 <span>ans</span>
@@ -35,27 +42,36 @@ const About = () => {
               <span className="subtitle">Saint-Martin VS</span>
             </div>
             <div
-                className="text wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="0.2s"
+              className="text wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
             >
               <p>
-                J’ai commencé le vélo en 2016, à l’âge de 15 ans, tout d’abord par le VTT, puis par la route. J’ai très
-                vite préféré la route par rapport aux autres disciplines, j’ai débuté par de petites courses régionales
-                avec le cyclophile sédunois et, petit à petit, j’ai gravi les échelons jusqu’à l’élite, remportant
-                notamment un titre de champion suisse de la montagne et un de vice-champion suisse. J’ai également
-                pratiqué le cyclo-cross certains hivers, où j’ai décroché un titre de champion valaisan et un de
+                J&apos;ai commencé le vélo en 2016, à l&apos;âge de 15 ans, tout
+                d’abord par le VTT, puis par la route. J&apos;ai très vite
+                préféré la route par rapport aux autres disciplines, j&apos;ai
+                débuté par de petites courses régionales avec le cyclophile
+                sédunois et, petit à petit, j&apos;ai gravi les échelons
+                jusqu&apos;à l&apos;élite, remportant notamment un titre de
+                champion suisse de la montagne et un de vice-champion suisse.
+                J&apos;ai également pratiqué le cyclo-cross certains hivers, où
+                j&apos;ai décroché un titre de champion valaisan et un de
                 champion romand.
               </p>
               <p>
-                Pour la saison 2024, j’ai fais le choix de partir dans une nouvelle formation en France, après avoir
-                passé mes 4 dernières saisons au sein de l’équipe Elite Fondations Cycling Team. Je suis actuellement
-                sous les couleurs de « Charvieu-Chavagneux Isère Cyclisme » une équipe française de niveau élite
-                nationale première division, qui va m’aider à passer un palier supplémentaire pour la suite de ma
-                carrière.
+                Pour la saison 2024, j&apos;ai fait le choix de partir dans une
+                nouvelle formation en France, après avoir passé mes 4 dernières
+                saisons au sein de l&apos;équipe Elite Fondations Cycling Team.
+                Je suis actuellement sous les couleurs de « Charvieu-Chavagneux
+                Isère Cyclisme », une équipe française de niveau élite nationale
+                première division, qui va m&apos;aider à passer un palier
+                supplémentaire pour la suite de ma carrière.
               </p>
               <p>
-                En dehors du sport de haut niveau, j’ai effectué un CFC de polymécanicien à la Base Aérienne de Sion. Actuellement, je me consacre à 100% dans le cyclisme, afin de tout mettre en œuvre pour réussir.
+                En dehors du sport de haut niveau, j&apos;ai effectué un CFC de
+                polymécanicien à la Base Aérienne de Sion. Actuellement, je me
+                consacre à 100% dans le cyclisme, afin de tout mettre en œuvre
+                pour réussir.
               </p>
             </div>
           </div>

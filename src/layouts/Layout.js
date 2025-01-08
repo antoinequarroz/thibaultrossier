@@ -1,16 +1,16 @@
-import Head from "next/head";
-import { Fragment, useEffect } from "react";
+import Head from 'next/head';
+import { Fragment, useEffect } from 'react';
 import {
   aali_tm_moving_animation,
   aTagClick,
   dataImage,
   wowJsAnimation,
-} from "../utilits";
-import Cursor from "./Cursor";
-import Footer from "./Footer";
-import Header from "./Header";
-import MobileMenu from "./MobileMenu";
-import Preloader from "./Preloader";
+} from '../utilits';
+import Cursor from './Cursor';
+import Footer from './Footer';
+import Header from './Header';
+import MobileMenu from './MobileMenu';
+import Preloader from './Preloader';
 
 const Layout = ({ children, headName, dark }) => {
   useEffect(() => {

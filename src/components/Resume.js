@@ -1,6 +1,6 @@
-import { useEffect } from "react";
-import { edu, exp } from "../svgImage";
-import { jarallaxContent } from "../utilits";
+import { useEffect } from 'react';
+import { edu, exp } from '../svgImage';
+import { jarallaxContent } from '../utilits';
 
 const Resume = () => {
   useEffect(() => {
@@ -114,8 +114,6 @@ const Resume = () => {
                           </div>
                         </div>
                       </li>
-
-
                     </ul>
                   </li>
                   <li className="wow fadeInRight" data-wow-duration="1s">
@@ -129,7 +127,9 @@ const Resume = () => {
                           <div className="info">
                             <div className="left">
                               <h3>Courses nationale</h3>
-                              <span>Championnat suisse de la montagne junior 2018</span>
+                              <span>
+                                Championnat suisse de la montagne junior 2018
+                              </span>
                             </div>
                             <div className="right">
                               <span>2ème</span>
@@ -143,7 +143,9 @@ const Resume = () => {
                           <div className="info">
                             <div className="left">
                               <h3>Courses nationale</h3>
-                              <span>Championnat suisse de la montagne junior 2019</span>
+                              <span>
+                                Championnat suisse de la montagne junior 2019
+                              </span>
                             </div>
                             <div className="right">
                               <span>1er</span>
@@ -158,7 +160,9 @@ const Resume = () => {
                           <div className="info">
                             <div className="left">
                               <h3>Courses nationale</h3>
-                              <span>Championnat suisse de la montagne Elite</span>
+                              <span>
+                                Championnat suisse de la montagne Elite
+                              </span>
                             </div>
                             <div className="right">
                               <span>3ème</span>
@@ -188,7 +192,9 @@ const Resume = () => {
                           <div className="info">
                             <div className="left">
                               <h3>Courses internationale</h3>
-                              <span>Championnat d'Europe des grimpeurs 2023 U23</span>
+                              <span>
+                                Championnat Europe des grimpeurs 2023 U23
+                              </span>
                             </div>
                             <div className="right">
                               <span>3ème</span>
@@ -196,7 +202,6 @@ const Resume = () => {
                           </div>
                         </div>
                       </li>
-
                     </ul>
                   </li>
                 </ul>
@@ -204,7 +209,6 @@ const Resume = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

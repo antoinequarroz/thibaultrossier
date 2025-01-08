@@ -1,5 +1,5 @@
-import Isotope from "isotope-layout";
-import { useEffect, useRef, useState } from "react";
+import Isotope from 'isotope-layout';
+import { useEffect, useRef, useState } from 'react';
 import {
   fb,
   insta,
@@ -9,20 +9,20 @@ import {
   twitter,
   vimeo,
   youtube,
-} from "../svgImage";
-import { aTagClick, dataImage } from "../utilits";
-import ModalBox from "./ModalBox";
-import Popup from "./Popup";
+} from '../svgImage';
+import { aTagClick, dataImage } from '../utilits';
+import ModalBox from './ModalBox';
+import Popup from './Popup';
 
 const Portfolio = () => {
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("*");
+  const [filterKey, setFilterKey] = useState('*');
   useEffect(() => {
     setTimeout(() => {
-      isotope.current = new Isotope(".gallery_zoom", {
-        itemSelector: ".filter-item",
-        layoutMode: "fitRows",
+      isotope.current = new Isotope('.gallery_zoom', {
+        itemSelector: '.filter-item',
+        layoutMode: 'fitRows',
       });
     }, 300);
     return () => isotope.current.destroy();
@@ -31,7 +31,7 @@ const Portfolio = () => {
     dataImage();
     aTagClick();
     if (isotope.current) {
-      filterKey === "*"
+      filterKey === '*'
         ? isotope.current.arrange({ filter: `*` })
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
@@ -41,7 +41,7 @@ const Portfolio = () => {
   };
   // popup
   const [video, setVideo] = useState(false);
-  const [videoContent, setVideoContent] = useState({ name: "", src: "" });
+  const [videoContent, setVideoContent] = useState({ name: '', src: '' });
   const showPopup = (name, src) => {
     setVideo(true);
     setVideoContent({ name, src });
@@ -64,24 +64,24 @@ const Portfolio = () => {
           <div className="portfolio_filter">
             <ul>
               <li>
-                <a onClick={handleFilterKeyChange("*")} className="current">
+                <a onClick={handleFilterKeyChange('*')} className="current">
                   All
                 </a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("vimeo")}>Vimeo</a>
+                <a onClick={handleFilterKeyChange('vimeo')}>Vimeo</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("youtube")}>Youtube</a>
+                <a onClick={handleFilterKeyChange('youtube')}>Youtube</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("soundcloud")}>Soundcloud</a>
+                <a onClick={handleFilterKeyChange('soundcloud')}>Soundcloud</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("image")}>Image</a>
+                <a onClick={handleFilterKeyChange('image')}>Image</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("detail")}>Detail</a>
+                <a onClick={handleFilterKeyChange('detail')}>Detail</a>
               </li>
             </ul>
           </div>
@@ -102,7 +102,7 @@ const Portfolio = () => {
                   <a
                     className="aali_tm_full_link popup-vimeo"
                     href="#"
-                    onClick={() => showPopup("vimeo", "337293658")}
+                    onClick={() => showPopup('vimeo', '337293658')}
                   />
                 </div>
               </li>
@@ -121,7 +121,7 @@ const Portfolio = () => {
                   <a
                     className="aali_tm_full_link popup-youtube"
                     href="#"
-                    onClick={() => showPopup("youtube", "7e90gBu4pas")}
+                    onClick={() => showPopup('youtube', '7e90gBu4pas')}
                   />
                 </div>
               </li>
@@ -140,7 +140,7 @@ const Portfolio = () => {
                   <a
                     className="aali_tm_full_link soundcloude_link mfp-iframe audio"
                     href="#"
-                    onClick={() => showPopup("soundcloud", "471954807")}
+                    onClick={() => showPopup('soundcloud', '471954807')}
                   />
                 </div>
               </li>
@@ -161,7 +161,7 @@ const Portfolio = () => {
                     href="#"
                     onClick={() => setModal(1)}
                   />
-                  <div className={modal === 1 ? "" : "hidden_content"}>
+                  <div className={modal === 1 ? '' : 'hidden_content'}>
                     <ModalBox close={setModal}>
                       <div className="popup_details">
                         <div className="top_image">
@@ -291,7 +291,7 @@ const Portfolio = () => {
                   <a
                     className="aali_tm_full_link zoom"
                     href="#"
-                    onClick={() => showPopup("image", "img/portfolio/5.jpg")}
+                    onClick={() => showPopup('image', 'img/portfolio/5.jpg')}
                   />
                 </div>
               </li>
@@ -312,7 +312,7 @@ const Portfolio = () => {
                     href="#"
                     onClick={() => setModal(2)}
                   />
-                  <div className={modal === 2 ? "" : "hidden_content"}>
+                  <div className={modal === 2 ? '' : 'hidden_content'}>
                     <ModalBox close={setModal}>
                       <div className="popup_details">
                         <div className="top_image">

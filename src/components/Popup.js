@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef } from "react";
+import React, { Fragment, useEffect, useRef } from 'react';
 
 let useClickOutside = (handler) => {
   let domNode = useRef();
@@ -10,10 +10,10 @@ let useClickOutside = (handler) => {
       }
     };
 
-    document.addEventListener("mousedown", maybeHandler);
+    document.addEventListener('mousedown', maybeHandler);
 
     return () => {
-      document.removeEventListener("mousedown", maybeHandler);
+      document.removeEventListener('mousedown', maybeHandler);
     };
   });
 
@@ -28,7 +28,7 @@ const Popup = ({ close, content }) => {
 
   const findContent = (name) => {
     switch (name) {
-      case "vimeo":
+      case 'vimeo':
         return (
           <iframe
             className="mfp-iframe"
@@ -37,19 +37,19 @@ const Popup = ({ close, content }) => {
             allowFullScreen
           />
         );
-      case "soundcloud":
+      case 'soundcloud':
         return (
           <iframe
             className="mfp-iframe"
             src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${
-              src ? src : "471954807"
+              src ? src : '471954807'
             }&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}
             frameBorder={0}
             allowFullScreen
           />
         );
 
-      case "image":
+      case 'image':
         return <img className="mfp-img" src={src} />;
 
       default:
@@ -57,7 +57,7 @@ const Popup = ({ close, content }) => {
           <iframe
             className="mfp-iframe"
             src={`//www.youtube.com/embed/${
-              src ? src : "FgA6MwKmmc0"
+              src ? src : 'FgA6MwKmmc0'
             }?autoplay=1`}
             frameBorder={0}
             allowFullScreen
@@ -72,11 +72,11 @@ const Popup = ({ close, content }) => {
       <div
         className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"
         tabIndex={-1}
-        style={{ overflow: "hidden auto" }}
+        style={{ overflow: 'hidden auto' }}
       >
         <div
           className={`mfp-container mfp-s-ready mfp-iframe-holder ${
-            name == "image" ? "mfp-img-container" : ""
+            name == 'image' ? 'mfp-img-container' : ''
           }`}
         >
           <div className="mfp-content" ref={domNode}>

@@ -1,5 +1,5 @@
-import { Fragment, useEffect } from "react";
-import { customCursor } from "../utilits";
+import { Fragment, useEffect } from 'react';
+import { customCursor } from '../utilits';
 
 const Cursor = () => {
   useEffect(() => {

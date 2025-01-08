@@ -1,5 +1,5 @@
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 SwiperCore.use([Pagination, Navigation]);
 const Testimonial = () => {
   const props = {
@@ -7,8 +7,8 @@ const Testimonial = () => {
     loop: true,
     pagination: false,
     navigation: {
-      prevEl: ".prev_button",
-      nextEl: ".next_button",
+      prevEl: '.prev_button',
+      nextEl: '.next_button',
     },
   };
 
@@ -17,7 +17,11 @@ const Testimonial = () => {
       <div className="aali_tm_testimonials">
         <div className="left">
           <div className="image">
-            <img src="/img/thibault/img.png" className="imagetr" alt="tr image" />
+            <img
+              src="/img/thibault/img.png"
+              className="imagetr"
+              alt="tr image"
+            />
           </div>
         </div>
         <div className="right">
@@ -33,9 +37,13 @@ const Testimonial = () => {
               <SwiperSlide className="item">
                 <div className="text">
                   <p>
-                    Thibault est un excellent grimpeur. Il l’a déjà prouvé en devenant champion Suisse de la montagne en 2019. La saison dernière, c’est dans la plaine qu’il a énormément progressé et cela fait de lui un coureur complet. Explosif, il a la capacité de s’imposer sur différents terrains. Travailleur, passionné, l’avenir lui appartient.
+                    Thibault est un excellent grimpeur. Il l’a déjà prouvé en
+                    devenant champion Suisse de la montagne en 2019. La saison
+                    dernière, c’est dans la plaine qu’il a énormément progressé
+                    et cela fait de lui un coureur complet. Explosif, il a la
+                    capacité de s’imposer sur différents terrains. Travailleur,
+                    passionné, l’avenir lui appartient.
                   </p>
-
                 </div>
                 <div className="name">
                   <h3>
@@ -44,8 +52,7 @@ const Testimonial = () => {
                 </div>
               </SwiperSlide>
 
-              {
-                /*
+              {/*
               }
               <SwiperSlide className="item">
                 <div className="text">
@@ -89,8 +96,7 @@ const Testimonial = () => {
                 </div>
               </SwiperSlide>
 
-                 */
-                }
+                 */}
             </Swiper>
             <div className="direct">
               <a className="prev_button">
@@ -120,7 +126,6 @@ const Testimonial = () => {
       </div>
     </div>
   );
-
 };
 
 export default Testimonial;
