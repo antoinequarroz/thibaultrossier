@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const OrSponsors = () => {
   const sponsorsOr = [
-    { src: '/img/veloPlatine/imgOr1.png', alt: 'Or Sponsor 1' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgOr1_ophlue.png', alt: 'Or Sponsor 1' },
   ];
 
   return (

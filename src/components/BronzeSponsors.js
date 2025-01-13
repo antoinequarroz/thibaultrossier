@@ -5,13 +5,13 @@ import Image from 'next/image';
 
 const BronzeSponsors = () => {
   const sponsorsBronze = [
-    { src: '/img/veloPlatine/img_1.png', alt: 'Bronze Sponsor 1' },
-    { src: '/img/veloPlatine/img_2.png', alt: 'Bronze Sponsor 2' },
-    { src: '/img/veloPlatine/img_3.png', alt: 'Bronze Sponsor 3' },
-    { src: '/img/veloPlatine/img_4.png', alt: 'Bronze Sponsor 4' },
-    { src: '/img/veloPlatine/img_5.png', alt: 'Bronze Sponsor 5' },
-    { src: '/img/veloPlatine/img_6.png', alt: 'Bronze Sponsor 5' },
-    { src: '/img/veloPlatine/img_7.png', alt: 'Bronze Sponsor 5' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/img_1_dwobex.png', alt: 'Bronze Sponsor 1' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791064/img_2_fktdv0.png', alt: 'Bronze Sponsor 2' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791064/img_3_o0z1zy.png', alt: 'Bronze Sponsor 3' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791064/img_4_ritzrc.png', alt: 'Bronze Sponsor 4' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791064/img_5_k5xrtx.png', alt: 'Bronze Sponsor 5' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791064/img_6_fagcg9.png', alt: 'Bronze Sponsor 5' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791066/img_7_ptnhku.png', alt: 'Bronze Sponsor 5' },
   ];
 
   return (

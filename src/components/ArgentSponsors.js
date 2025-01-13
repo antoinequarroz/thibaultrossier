@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 const ArgentSponsors = () => {
   const sponsorsArgent = [
-    { src: '/img/veloPlatine/imgArgent.png', alt: 'Argent Sponsor 1' },
-    { src: '/img/veloPlatine/imgArgent1.png', alt: 'Argent Sponsor 2' },
-    { src: '/img/veloPlatine/imgArgent2.png', alt: 'Argent Sponsor 3' },
-    { src: '/img/veloPlatine/imgArgent3.png', alt: 'Argent Sponsor 4' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent_yfmdii.png', alt: 'Argent Sponsor 1' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent1_dwrklj.png', alt: 'Argent Sponsor 2' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent2_fsyiar.png', alt: 'Argent Sponsor 3' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent3_aoz3oz.png', alt: 'Argent Sponsor 4' },
   ];
 
   return (
