@@ -34,7 +34,7 @@ const About = () => {
             <div className="title wow fadeInUp" data-wow-duration="1s">
               <h1>A propos de moi</h1>
               <h3>
-                {'Je m&apos;appelle '} <span>Thibault Rossier</span>
+                {'Hello, je suis '} <span>Thibault Rossier</span>
               </h3>
               <h3>
                 23 <span>ans</span>
