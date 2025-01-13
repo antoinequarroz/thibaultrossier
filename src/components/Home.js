@@ -87,8 +87,8 @@ const Home = () => {
                   alt="Image de Thibault"
                   className="layer"
                   data-depth="0.1"
-                  width="500" // Ajuste selon les dimensions réelles
-                  height="500" // Ajuste selon les dimensions réelles
+                  width="auto" // Ajuste selon les dimensions réelles
+                  height="700" // Ajuste selon les dimensions réelles
                 />
               </div>
               <span className="one">
