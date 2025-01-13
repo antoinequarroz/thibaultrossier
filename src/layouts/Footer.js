@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="copyright_inner">
             <div className="top">
               <div className="logo">
-                <img src="/img/thibault/logoThibaultRossier.png" alt="tr log" />
+                <img src="https://res.cloudinary.com/doeq7bppc/image/upload/v1736790033/logoThibaultRossier_wjt78d.png" alt="tr log" />
               </div>
               <div className="social">
                 <ul>
