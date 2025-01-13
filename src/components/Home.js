@@ -1,18 +1,23 @@
+// Exemple dans Home.js
 import { useEffect, useState } from 'react';
 import { fb, insta, msg, twitter } from '../svgImage';
 import { parallax } from '../utilits';
+// Supprime ou commente l'import de Image
+// import Image from 'next/image';
 
 const Home = () => {
   const [text, setText] = useState(1);
+
   useEffect(() => {
     parallax();
     const interval = setInterval(() => {
-      setText(text < 3 ? text + 1 : 1);
+      setText((prevText) => (prevText < 3 ? prevText + 1 : 1));
     }, 5000);
     return () => clearInterval(interval);
-  });
+  }, []);
+
   return (
-    <div className="aali_tm_section " id="home">
+    <div className="aali_tm_section" id="home">
       <div className="aali_tm_hero">
         <div className="container">
           <div className="hero_inner">
@@ -20,9 +25,6 @@ const Home = () => {
               <h3 className="name">Thibault Rossier</h3>
               <div className="job">
                 <span className="cd-headline rotate-1">
-                  {' '}
-                  {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-                  {/* <span className="blc">Je suis </span> */}
                   <span className="cd-words-wrapper">
                     <b className={text === 1 ? 'is-visible' : 'is-hidden'}>
                       Cycliste
@@ -39,6 +41,7 @@ const Home = () => {
               <div className="aali_tm_down">
                 <div className="down-icon white top_120">
                   <a className="anchor" href="#about">
+                    {/* SVG inchangé */}
                     <svg
                       width="26px"
                       height="100%"
@@ -80,10 +83,12 @@ const Home = () => {
             <div className="avatar parallax" style={{ position: 'absolute' }}>
               <div className="main">
                 <img
-                  src="/../img/thibault/4R2A2973.png"
-                  alt="image"
+                  src="https://res.cloudinary.com/doeq7bppc/image/upload/v1736790034/4R2A2973_ubxryj.png" // Remplace par ton URL Cloudinary
+                  alt="Image de Thibault"
                   className="layer"
                   data-depth="0.1"
+                  width="500" // Ajuste selon les dimensions réelles
+                  height="500" // Ajuste selon les dimensions réelles
                 />
               </div>
               <span className="one">
@@ -119,6 +124,7 @@ const Home = () => {
                 {insta}
               </a>
             </li>
+            {/* Ajoute d'autres réseaux sociaux si nécessaire */}
           </ul>
         </div>
         <div className="hero_mail">
