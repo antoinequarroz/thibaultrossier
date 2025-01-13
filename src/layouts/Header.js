@@ -13,19 +13,19 @@ const Header = ({ dark }) => {
           {dark ? (
             <div className="logo">
               <a href="#">
-                <img src="/img/thibault/logoThibaultRossier.png" alt="" />
+                <img src="https://res.cloudinary.com/doeq7bppc/image/upload/v1736790033/logoThibaultRossier_wjt78d.png" alt="" />
               </a>
             </div>
           ) : (
             <div className="logo">
               <a className="light" href="#">
                 <img
-                  src="/img/thibault/logoThibaultRossier.png"
+                  src="https://res.cloudinary.com/doeq7bppc/image/upload/v1736790033/logoThibaultRossier_wjt78d.png"
                   alt="tr logo"
                 />
               </a>
               <a className="dark" href="#">
-                <img src="/img/thibault/logoThibaultRossier.png" alt="tr log" />
+                <img src="https://res.cloudinary.com/doeq7bppc/image/upload/v1736790033/logoThibaultRossier_wjt78d.png" alt="tr log" />
               </a>
             </div>
           )}

@@ -18,7 +18,7 @@ const Testimonial = () => {
         <div className="left">
           <div className="image">
             <img
-              src="/img/thibault/img.png"
+              src="https://res.cloudinary.com/doeq7bppc/image/upload/v1736790034/img_m3hjm5.png"
               className="imagetr"
               alt="tr image"
             />

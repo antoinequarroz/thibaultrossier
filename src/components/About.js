@@ -1,5 +1,5 @@
 import { download } from '../svgImage';
-import Image from 'next/image';
+
 
 const About = () => {
   return (
@@ -8,8 +8,8 @@ const About = () => {
         <div className="about_inner">
           <div className="left">
             <div className="image">
-              <Image
-                src="/img/thibault/img.png"
+              <img
+                src="https://res.cloudinary.com/doeq7bppc/image/upload/v1736790034/img_m3hjm5.png"
                 alt="Tr image"
                 width={500} // Remplacez par la largeur réelle de votre image
                 height={500} // Remplacez par la hauteur réelle de votre image
