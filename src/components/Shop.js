@@ -1,7 +1,7 @@
 // src/components/Shop.js
 
 import React, { useState } from 'react';
-import Image from 'next/image';
+
 
 const Shop = () => {
   const products = [
@@ -11,7 +11,7 @@ const Shop = () => {
       description:
         'Un sweat-shirt confortable et élégant, parfait pour toutes les saisons.',
       price: 99.99,
-      image: '/img/shop/vesteNoirFinalTR.png',
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/vesteNoirFinalTR_mtnbab.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
@@ -20,7 +20,7 @@ const Shop = () => {
       description:
         'Maillot sportif en tissu respirant, idéal pour vos entraînements.',
       price: 110.0,
-      image: '/img/shop/maillotRoseFinalTR.png',
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/maillotRoseFinalTR_up0bgr.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
@@ -28,7 +28,7 @@ const Shop = () => {
       name: 'Cuissard Courte en Polaire',
       description: 'Cuissard chaud, parfait pour les journées fraîches.',
       price: 149.99,
-      image: '/img/shop/shortNoirFinalTR.png',
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/shortNoirFinalTR_rtvzaq.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
@@ -37,7 +37,7 @@ const Shop = () => {
       description:
         'Sweat-shirt robuste avec double boutonnage pour une durabilité accrue.',
       price: 149.99,
-      image: '/img/shop/jacquetNoirFinalTR.png',
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791732/jacquetNoirFinalTR_lktbwy.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
@@ -46,7 +46,7 @@ const Shop = () => {
       description:
         'Veste inspirée des modèles LASER, alliant style et fonctionnalité.',
       price: 149.99,
-      image: '/img/shop/jacquet2NoirFinalTR.png',
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791732/jacquet2NoirFinalTR_fiy3nj.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
@@ -55,7 +55,7 @@ const Shop = () => {
       description:
         'Cuissard en polaire douce, offrant chaleur et confort tout au long de la journée.',
       price: 149.99,
-      image: '/img/shop/longNoirFinalTR.png',
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/longNoirFinalTR_h9xivi.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     // Ajoutez d'autres produits ici
@@ -193,12 +193,10 @@ const Shop = () => {
         {products.map((product) => (
           <div key={product.id} className="product">
             <div className="image_container">
-              <Image
+              <img
                 src={product.image}
                 alt={product.name}
-                layout="fill"
-                objectFit="contain" // Utiliser 'contain' pour éviter la coupure
-                priority={false}
+                width="450"
               />
             </div>
             <h3 className="titrenoir">{product.name}</h3>
