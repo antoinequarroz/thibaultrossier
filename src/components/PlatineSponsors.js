@@ -1,22 +1,22 @@
 // src/components/PlatineSponsors.js
 
 import React from 'react';
-import Image from 'next/image';
+
 
 const PlatineSponsors = () => {
   const sponsorsPlatine = [
-    { src: '/img/veloPlatine/img1.png', alt: 'Platine Sponsor 1' },
-    { src: '/img/veloPlatine/img2.png', alt: 'Platine Sponsor 2' },
-    { src: '/img/veloPlatine/img3.png', alt: 'Platine Sponsor 3' },
-    { src: '/img/veloPlatine/img4.png', alt: 'Platine Sponsor 4' },
-    { src: '/img/veloPlatine/img5.png', alt: 'Platine Sponsor 5' },
-    { src: '/img/veloPlatine/img6.png', alt: 'Platine Sponsor 6' },
-    { src: '/img/veloPlatine/img7.png', alt: 'Platine Sponsor 7' },
-    { src: '/img/veloPlatine/img8.png', alt: 'Platine Sponsor 8' },
-    { src: '/img/veloPlatine/img9.png', alt: 'Platine Sponsor 9' },
-    { src: '/img/veloPlatine/img10.png', alt: 'Platine Sponsor 10' },
-    { src: '/img/veloPlatine/img11.png', alt: 'Platine Sponsor 11' },
-    { src: '/img/veloPlatine/img12.png', alt: 'Platine Sponsor 12' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791067/img1_rhjb3q.png', alt: 'Platine Sponsor 1' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791067/img2_wzihvq.png', alt: 'Platine Sponsor 2' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791067/img3_xouikh.png', alt: 'Platine Sponsor 3' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791067/img4_lifjke.png', alt: 'Platine Sponsor 4' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791067/img5_dd4x3t.png', alt: 'Platine Sponsor 5' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791068/img6_ldhwhu.png', alt: 'Platine Sponsor 6' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791068/img7_apolk6.png', alt: 'Platine Sponsor 7' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791068/img8_piaxms.png', alt: 'Platine Sponsor 8' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791069/img9_nvtrls.png', alt: 'Platine Sponsor 9' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791069/img10_aynla7.png', alt: 'Platine Sponsor 10' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791070/img11_m426bt.png', alt: 'Platine Sponsor 11' },
+    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791070/img12_o2hxo1.png', alt: 'Platine Sponsor 12' },
   ];
 
   return (
@@ -28,12 +28,9 @@ const PlatineSponsors = () => {
         {sponsorsPlatine.map((sponsor, index) => (
           <div key={index} className="sponsor_item">
             <div className="image_wrapper">
-              <Image
+              <img
                 src={sponsor.src}
                 alt={sponsor.alt}
-                layout="fill"
-                objectFit="contain"
-                priority={false}
               />
             </div>
           </div>
