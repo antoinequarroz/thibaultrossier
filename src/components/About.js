@@ -1,3 +1,4 @@
+import { download } from '../svgImage';
 import Image from 'next/image';
 
 const About = () => {
@@ -8,13 +9,13 @@ const About = () => {
           <div className="left">
             <div className="image">
               <Image
-                src="/img/thibault/img.png" // Assure-toi que ce chemin est correct
+                src="/img/thibault/img.png"
                 alt="Tr image"
-                width={500} // Utilise les dimensions réelles de ton image
-                height={500}
-                className="responsive-image"
+                width={500} // Remplacez par la largeur réelle de votre image
+                height={500} // Remplacez par la hauteur réelle de votre image
+                className="responsive-image" // Optionnel : ajouter une classe pour le style
               />
-              <div className="main" data-img-url="/img/thibault/img.png" /> {/* Vérifie ce chemin */}
+              <div className="main" data-img-url="thib" />
               <span
                 className="square moving_effect"
                 data-direction="y"
@@ -76,7 +77,7 @@ const About = () => {
           </div>
           <div className="right">
             <div className="image">
-              <div className="main" data-img-url="/img/thibault/img.png" /> {/* Vérifie ce chemin */}
+              <div className="main" data-img-url="/img/thibault/img.png" />
             </div>
           </div>
         </div>
