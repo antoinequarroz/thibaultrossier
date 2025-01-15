@@ -5,10 +5,26 @@ import Image from 'next/image';
 
 const ArgentSponsors = () => {
   const sponsorsArgent = [
-    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent_yfmdii.png', alt: 'Argent Sponsor 1' },
-    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent1_dwrklj.png', alt: 'Argent Sponsor 2' },
-    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent2_fsyiar.png', alt: 'Argent Sponsor 3' },
-    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent3_aoz3oz.png', alt: 'Argent Sponsor 4' },
+    {
+      src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent_yfmdii.png',
+      alt: 'Argent Sponsor 1',
+      url: '#' // Ajoutez l'URL du sponsor
+    },
+    {
+      src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent1_dwrklj.png',
+      alt: 'Argent Sponsor 2',
+      url: 'https://www.veisivi.ch'
+    },
+    {
+      src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent2_fsyiar.png',
+      alt: 'Argent Sponsor 3',
+      url: 'https://iris.swiss/jus/'
+    },
+    {
+      src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgArgent3_aoz3oz.png',
+      alt: 'Argent Sponsor 4',
+      url: 'https://pralongmoix.ch'
+    },
   ];
 
   return (
@@ -19,64 +35,71 @@ const ArgentSponsors = () => {
       <div className="sponsors_gallery">
         {sponsorsArgent.map((sponsor, index) => (
           <div key={index} className="sponsor_item">
-            <div className="image_wrapper">
-              <Image
-                src={sponsor.src}
-                alt={sponsor.alt}
-                layout="fill" // Utilisation correcte pour Next.js 12
-                objectFit="contain"
-                priority={false}
-              />
-            </div>
+            <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+              <div className="image_wrapper">
+                <Image
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  layout="fill" // Utilisation correcte pour Next.js 12
+                  objectFit="contain"
+                  priority={false}
+                />
+              </div>
+            </a>
           </div>
         ))}
       </div>
       {/* eslint-disable-next-line react/no-unknown-property */}
       <style jsx>{`
-        .sponsors_category {
-          margin-bottom: 60px;
-        }
-        .main_title {
-          text-align: center;
-          margin-bottom: 20px;
-        }
-        .main_title h3 {
-          font-size: 2em;
-          color: #fff;
-        }
-        .sponsors_gallery {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 20px;
-        }
-        .sponsor_item {
-          position: relative;
-          width: 100%;
-          padding-top: 100%; /* Aspect ratio carré */
-          overflow: hidden;
-          transition: transform 0.3s ease;
-        }
-        .image_wrapper {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-        .sponsor_item:hover {
-          transform: scale(1.1);
-        }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-          .sponsors_gallery {
-            grid-template-columns: repeat(2, 1fr);
+          .sponsors_category {
+              margin-bottom: 60px;
           }
-        }
-        @media (max-width: 576px) {
-          .sponsors_gallery {
-            grid-template-columns: repeat(1, 1fr);
+          .main_title {
+              text-align: center;
+              margin-bottom: 20px;
           }
-        }
+          .main_title h3 {
+              font-size: 2em;
+              color: #fff;
+          }
+          .sponsors_gallery {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 20px;
+          }
+          .sponsor_item {
+              position: relative;
+              width: 100%;
+              padding-top: 100%; /* Aspect ratio carré */
+              overflow: hidden;
+              transition: transform 0.3s ease;
+          }
+          .image_wrapper {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+          }
+          .sponsor_item:hover {
+              transform: scale(1.1);
+          }
+          /* Responsive Design */
+          @media (max-width: 1200px) {
+              .sponsors_gallery {
+                  grid-template-columns: repeat(3, 1fr);
+              }
+          }
+          @media (max-width: 768px) {
+              .sponsors_gallery {
+                  grid-template-columns: repeat(2, 1fr);
+              }
+          }
+          @media (max-width: 576px) {
+              .sponsors_gallery {
+                  grid-template-columns: repeat(1, 1fr);
+              }
+          }
       `}</style>
     </div>
   );

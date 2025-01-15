@@ -5,7 +5,11 @@ import Image from 'next/image';
 
 const OrSponsors = () => {
   const sponsorsOr = [
-    { src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgOr1_ophlue.png', alt: 'Or Sponsor 1' },
+    {
+      src: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791063/imgOr1_ophlue.png',
+      alt: 'Or Sponsor 1',
+      url: 'https://www.opal-systems.be' // Ajoutez l'URL du sponsor
+    },
   ];
 
   return (
@@ -16,20 +20,22 @@ const OrSponsors = () => {
       <div className="sponsors_gallery">
         {sponsorsOr.map((sponsor, index) => (
           <div key={index} className="sponsor_item">
-            <div className="image_wrapper">
-              <Image
-                src={sponsor.src}
-                alt={sponsor.alt}
-                layout="fill"
-                objectFit="contain"
-                priority={false}
-              />
-            </div>
+            <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+              <div className="image_wrapper">
+                <Image
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  layout="fill"
+                  objectFit="contain"
+                  priority={false}
+                />
+              </div>
+            </a>
           </div>
-        ))}
+          ))}
       </div>
       <style jsx>{`
-        .sponsors_category {
+          .sponsors_category {
           margin-bottom: 20px; /* Réduit la marge inférieure */
         }
         .main_title {
