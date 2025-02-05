@@ -5,13 +5,41 @@ import React, { useState } from 'react';
 
 const Shop = () => {
   const products = [
+
     {
       id: 1,
       name: 'Sweet thibross de ville',
       description:
         'Un sweat-shirt confortable et élégant, parfait pour toutes les saisons.',
-      price: 70,
+      price: 120,
       image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/vesteNoirFinalTR_mtnbab.png',
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
+    },
+    {
+      id: 7,
+      name: 'T-Shirt CSTR Gris',
+      description:
+        'T-shirt CSTR, idéal pour un usage quotidien.',
+      price: 49.99,
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736792342/tshirtFinalTR_mdmajx.png',
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
+    },
+    {
+      id: 8,
+      name: 'Polo CSTR Noir',
+      description:
+        'Polo CSTR, idéal pour un usage quotidien.',
+      price: 60,
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736792342/poloNoirFinalTR_fcxyiv.png',
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
+    },
+    {
+      id: 9,
+      name: 'Maillot court éditions CSTR',
+      description:
+        'Maillot sportif en tissu respirant,',
+      price: 110,
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736792342/maillotGrisFinalTR_vosqex.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
@@ -21,14 +49,6 @@ const Shop = () => {
         'Maillot sportif en tissu respirant, idéal pour vos entraînements.',
       price: 110.0,
       image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/maillotRoseFinalTR_up0bgr.png',
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
-    },
-    {
-      id: 3,
-      name: 'Cuissard court automne',
-      description: 'Cuissard chaud, parfait pour les journées fraîches.',
-      price: 149.99,
-      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/shortNoirFinalTR_rtvzaq.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
@@ -50,42 +70,6 @@ const Shop = () => {
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
     {
-      id: 6,
-      name: 'Cuissard long hiver',
-      description:
-        'Cuissard en polaire douce, offrant chaleur et confort tout au long de la journée.',
-      price: 169,
-      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/longNoirFinalTR_h9xivi.png',
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
-    },
-    {
-      id: 7,
-      name: 'T-Shirt CSTR Gris',
-      description:
-        'T-shirt CSTR, idéal pour un usage quotidien.',
-      price: 49.99,
-      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736792342/tshirtFinalTR_mdmajx.png',
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
-    },
-    {
-      id: 8,
-      name: 'Polo CSTR Noir',
-      description:
-        'Polo CSTR, idéal pour un usage quotidien.',
-      price: 49.99,
-      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736792342/poloNoirFinalTR_fcxyiv.png',
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
-    },
-    {
-      id: 9,
-      name: 'Maillot court éditions CSTR',
-      description:
-        'Maillot sportif en tissu respirant,',
-      price: 110,
-      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736792342/maillotGrisFinalTR_vosqex.png',
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
-    },
-    {
       id: 10,
       name: 'Cuissard court été',
       description:
@@ -94,6 +78,23 @@ const Shop = () => {
       image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736792342/saloppetteNoirFinalTR_vms6lb.png',
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
     },
+    {
+      id: 3,
+      name: 'Cuissard court automne',
+      description: 'Cuissard chaud, parfait pour les journées fraîches.',
+      price: 149.99,
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/shortNoirFinalTR_rtvzaq.png',
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
+    },
+    {
+      id: 6,
+      name: 'Cuissard long hiver',
+      description:
+        'Cuissard en polaire douce, offrant chaleur et confort tout au long de la journée.',
+      price: 169,
+      image: 'https://res.cloudinary.com/doeq7bppc/image/upload/v1736791733/longNoirFinalTR_h9xivi.png',
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2Xl', '3XL', '4XL', '5Xl', '6XL'],
+    }
     // Ajoutez d'autres produits ici
   ];
 

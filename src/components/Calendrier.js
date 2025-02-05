@@ -23,131 +23,6 @@ const Calendrier = () => {
                 <ul>
                   <li className="wow fadeInLeft" data-wow-duration="1s">
                     <h3 className="main_title">
-                      <span>2024</span>
-                    </h3>
-                    <ul className="list">
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses régionales</h3>
-                              <span>Giron du Rhône Bramois – Nax</span>
-                            </div>
-                            <div className="right">
-                              <span>1er</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses régionales</h3>
-                              <span>Giron du Rhône Blonay</span>
-                            </div>
-                            <div className="right">
-                              <span>2ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses nationales</h3>
-                              <span>GP Puyloubier</span>
-                            </div>
-                            <div className="right">
-                              <span>34ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses nationales</h3>
-                              <span>Berra Immobilier</span>
-                            </div>
-                            <div className="right">
-                              <span>9ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses nationales</h3>
-                              <span>GP Ticino</span>
-                            </div>
-                            <div className="right">
-                              <span>22ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses internationales</h3>
-                              <span>Boucle du Pays du Tronçais</span>
-                            </div>
-                            <div className="right">
-                              <span>10ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses internationales</h3>
-                              <span>GP Chamoux</span>
-                            </div>
-                            <div className="right">
-                              <span>8ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon"></span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Courses internationales</h3>
-                              <span>GP Cru Fleurie</span>
-                            </div>
-                            <div className="right">
-                              <span>10ème</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="wow fadeInRight" data-wow-duration="1s">
-                    <h3 className="main_title">
                       <span>2025</span>
                     </h3>
                     <ul className="list">
@@ -156,17 +31,187 @@ const Calendrier = () => {
                           <span className="icon"></span>
                           <div className="info">
                             <div className="left">
-                              <h3>A venir ...</h3>
-                              <span></span>
+                              <h3>Janvier</h3>
+                              <span>11 - 25 Camp Canaries</span>
                             </div>
-                            <div className="right">
-                              <span></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Février</h3>
+                              <span>23 GP Puyloubier (france - route)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Mars</h3>
+                              <span>1 - 8 stage Fédération en Toscane</span>
+                              <br />
+                              <span>16 GP Ticino (suisse - route)</span>
+                              <br />
+                              <span>
+                                30 Annemasse - Bellegarde ( france - route)
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Avril</h3>
+                              <span>5 GP Berra (valais - route)</span>
+                              <br />
+                              <span>2 Tour du Charollais (france - route)</span>
+                              <br />
+                              <span>21 GP Vougy (france - route))</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Mai</h3>
+                              <span>
+                                3 Riva del Garda VTT marathon UCI (italie - VTT)
+                              </span>
+                              <br />
+                              <span>10 Berner Rundfarht (berne - route)</span>
+                              <br />
+                              <span>
+                                18 Jura bike : VTT marathon UCI (suisse - VTT)
+                              </span>
+                              <br />
+                              <span>24 La Durtorcha (france - route)</span>
+                              <br />
+                              <span>29 Silenen (suisse - route)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon"></span>
+                          <div className="info">
+                            <div className="left">
+                              <h3>Juin</h3>
+                              <span>
+                                1er CHAMPIONNATS SUISSE MONTAGNE (Tessin -
+                                route)
+                              </span>
+                              <br />
+                              <span>
+                                8 Championnat d'Europe VTT Marathon Elite
+                                (italie - VTT marathon)
+                              </span>
+                              <br />
+                              <span>
+                                15 Raid Evolenard (suisse - VTT marathon)
+                              </span>
+                              <br />
+                              <span>
+                                29 Championnats Suisse Elite (suisse - route )
+                              </span>
                             </div>
                           </div>
                         </div>
                       </li>
                     </ul>
                   </li>
+
+                      <li className="wow fadeInRight" data-wow-duration="1s">
+                        <h3 className="main_title">
+                          <span>2025</span>
+                        </h3>
+                        <ul className="list">
+                          <li>
+                            <div className="list_inner">
+                              <span className="icon"></span>
+                              <div className="info">
+                                <div className="left">
+                                  <h3>Juillet</h3>
+                                  <span>
+                               5 MB RACE UCI vtt marathon (france - VTT marathon)
+                              </span>
+                                  <br />
+                                  <span>
+                                12 Championnat Suisse VTT marathon elit (suisse - VTT marathon)
+                              </span>
+                                  <br />
+                                  <span>
+                                20 Martigny - Mauvoisin (suisse - route)
+                              </span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="list_inner">
+                              <span className="icon"></span>
+                              <div className="info">
+                                <div className="left">
+                                  <h3>Août</h3>
+                                  <span>
+                               Préparation en altitude
+                              </span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="list_inner">
+                              <span className="icon"></span>
+                              <div className="info">
+                                <div className="left">
+                                  <h3>Septembre</h3>
+                                  <span>
+                                6 Championnats du monde VTT marathon Grand Raid BCVS (Verbier - Grimentz/ VTT marathon)
+                              </span>
+                                  <br />
+                                  <span>
+                                14 Chur -Arosa (Grisons- route )
+                              </span>
+                                  <br />
+                                  <span>
+                                21 Tour du Jura (Jura - route )
+                              </span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="list_inner">
+                              <span className="icon"></span>
+                              <div className="info">
+                                <div className="left">
+                                  <h3>Octobre</h3>
+                                  <span>
+                               10 Roc d'Azur VTT marathon (france - vtt marathon)
+                              </span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
                 </ul>
               </div>
             </div>
