@@ -159,7 +159,7 @@ const Shop = () => {
       return;
     }
 
-    // On enrichit les éléments sélectionnés en ajoutant le nom du produit grâce à l'ID
+    // Enrichir les éléments sélectionnés avec le nom du produit grâce à l'ID
     const selectedItems = Object.values(order.items)
       .filter((item) => item.quantity > 0 && item.size)
       .map((item) => {
@@ -197,7 +197,7 @@ const Shop = () => {
     emailjs
       .send(
         'service_1ylfboe',
-        'template_x1l9rqq', // Remplacez 'template_yourTemplateID' par l'ID exact de votre template EmailJS
+        'template_x1l9rqq', // Remplacez par l'ID exact de votre template EmailJS
         templateParams,
         'yQspMM7OvirPxix3y'
       )
