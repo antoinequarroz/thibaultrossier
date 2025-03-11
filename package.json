@@ -14,6 +14,7 @@
     "isotope-layout": "^3.0.6",
     "jarallax": "^1.12.8",
     "next": "12.0.3",
+    "nodemailer": "^6.10.0",
     "parallax-js": "^3.1.0",
     "react": "17.0.2",
     "react-countup": "^6.1.0",
